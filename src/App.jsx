@@ -1,6 +1,13 @@
 function Square({ value }) {
+  function handleClick() {
+    console.log(`You clicked on square ${value}`);
+  }
+
   return (
-    <button className="bg-white border border-gray-100 h-12 w-12 m-1 leading-9 text-lg">
+    <button
+      className="bg-white border border-gray-100 h-12 w-12 m-1 leading-9 text-lg"
+      onClick={handleClick}
+    >
       {value}
     </button>
   );
